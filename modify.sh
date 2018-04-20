@@ -1,8 +1,8 @@
 #!/bin/sh
 sudo echo "Starting..."
-MKSQSHFS4='./mksquashfs'
+MKSQSHFS4='./mksquashfs_xz-4.0'
 PADJFFS2='./padjffs2'
-UNSQSHFS='./unsquashfs'
+UNSQSHFS='./unsquashfs_xz-4.0'
 case "$1" in
 'extract'|'e')
 offset1=`grep -oba hsqs $2 | grep -oP '[0-9]*(?=:hsqs)'`
